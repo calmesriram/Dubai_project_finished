@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="../../../../global_assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/app.css"rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="../../../../global_assets/js/main/jquery.min.js"></script>
+	<script src="../../../../global_assets/js/main/bootstrap.bundle.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/loaders/blockui.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/web3.min.js"></script>
+	<script src="assets/js/myapp.js"></script>	
+	<script src="../../../../global_assets/js/plugins/forms/wizards/steps.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/validation/validate.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/cookie.js"></script>
+	<script src="../../../../global_assets/js/plugins/notifications/bootbox.min.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/components_modals.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/form_wizard.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-dark">
+		<div class="navbar-brand">
+			<a href="#" class="d-inline-block">
+				<!-- <img src="../../../../global_assets/images/logo_light.png" alt=""> -->
+			</a>
+		</div>
+
+		<div class="d-md-none">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+			<!-- <button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button> -->
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<!-- <li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li> -->
+
+				<li class="nav-item dropdown">
+					<a href="#" class="navbar-nav-link dropdown-toggle caret-0" data-toggle="dropdown">
+						<!-- <i class="icon-git-compare"></i> -->
+						<!-- <i class="icon-paragraph-justify3"></i> -->
+						<span class="d-md-none ml-2">Logistic updates</span>
+						<!-- <span class="badge badge-pill bg-warning-400 ml-auto ml-md-0">9</span> -->
+					</a>
+
+					<div class="dropdown-menu dropdown-content wmin-md-350">
+						<div class="dropdown-content-header">
+							<span class="font-weight-semibold">Logistic updates</span>
+							<a href="#" class="text-default"><i class="icon-sync"></i></a>
+						</div>
+
+						<!-- <div class="dropdown-content-body dropdown-scrollable">
+							<ul class="media-list">
+								<li class="media">
+									<a href="#">Planning Department</a>
+								</li>
+								<li class="media">
+									<a href="#">Survey Department</a>
+								</li>
+							</ul>
+						</div> -->
+					</div>
+				</li>
+			</ul>
+
+			<span class="badge bg-success ml-md-3 mr-md-auto">Online</span>
+
+			<ul class="navbar-nav">
+
+				<li class="nav-item dropdown dropdown-user">
+					<a href="#" class="navbar-nav-link d-flex align-items-center" onclick="logout()" data-toggle="dropdown">
+						<!-- <img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle mr-2" height="34" alt=""> -->
+						<span>Logout</span>
+					</a>
+
+				
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header page-header-light">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><!-- <i class="icon-arrow-left52 mr-2"></i>  --><span class="font-weight-semibold">Survey Department</span></h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+				</div>
+
+				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+					<div class="d-flex">
+						<div class="breadcrumb">
+							<a href="#" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Survey Department</a>
+							<span class="breadcrumb-item active">Update</span>
+						</div>
+
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none">
+						<div class="breadcrumb justify-content-center">
+						
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+
+
+			<!-- Content area -->
+			<div class="content">
+
+				<!-- Main charts -->
+				<div class="row">
+					
+					<div class="col-md-8">
+
+						<!-- Basic layout-->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Update existing record</h5>
+								
+							</div>
+
+							<div class="card-body">
+								<div>
+
+									<div class="form-group">
+										<label>Choose Unique Record ID:</label>
+										<select class="form-control form-control-select2"  id="url" data-fouc onchange="fun()">
+												<optgroup  id="dropdownState">
+														<option >Select</option> 
+														<!-- <option>50314861</option>
+														<option>50237167</option>
+														<option>50241388</option>  -->
+													</optgroup>
+										</select>
+									</div>
+
+									<div class="form-group">
+										<label>Owner Name:</label>
+										<input type="text" id="sdowenername" class="form-control" placeholder="Owner Name" disabled>
+									</div>
+
+									<div class="form-group">
+										<label>Mobile Number:</label>
+										<input type="text" id="sdmobilenumber" class="form-control" placeholder="Mobile Number" disabled>
+									</div>
+
+									<div class="form-group">
+										<label>Pin Code:</label>
+										<input type="text" id="sdpincode" class="form-control" placeholder="Pin code" disabled>
+									</div>
+
+									<div class="form-group">
+										<label>State:</label>
+										<input type="text" id="sdstate" class="form-control" placeholder="State" disabled>
+									</div>
+
+									<div class="form-group">
+										<label>Gender:</label>
+										<input type="text"id="sdgender" class="form-control" placeholder="Gender" disabled>
+									</div>
+
+									<div class="form-group">
+										<label>Record creation date:</label>
+										<input type="text" id="sdrecorddate" class="form-control" placeholder="Date" disabled>
+									</div>
+
+									<div class="form-group">
+										<label>Record creation time:</label>
+										<input type="time"id="sdrecordtime" class="form-control" placeholder="Time" disabled>
+									</div>
+
+									<div class="form-group">
+										<label>Geo Coordinates:</label>
+										<input type="text" id="sdgeo" class="form-control" placeholder="Coordinates">
+									</div>
+
+									<div class="form-group">
+										<label>Area:</label>
+										<input type="text" id="sdarea" class="form-control" placeholder="Area of land in hectares">
+									</div>
+
+									<div class="form-group">
+										<label>Upload pictures:</label>
+										<input type="file"  id="sdpic" name="cin" class="form-input-styled" data-fouc  onchange="fileChangeEvent(event)" multiple>
+										<span class="form-text text-muted">Accepted formats: gif, png, jpg. Max file size 2Mb</span>
+									</div>
+									
+
+									<div class="form-group">
+										<label>Your message:</label>
+										<textarea rows="5" id="sdmsg" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
+									</div>
+
+									<div class="text-right">
+										<button type="submit" class="btn btn-primary" onclick="updaterecord()">Update Record <i class="icon-paperplane ml-2"></i></button>
+									</div>
+								</div>
+								<div class="loading" id="ld" style="display:none;">Loading&#8230;</div>
+							</div>
+						</div>
+						<!-- /basic layout -->
+						<!-- Success modal -->
+						<div id="modal_theme_success_1" class="modal fade" tabindex="-1">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header bg-success">
+										<h6 class="modal-title">Notification</h6>
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									</div>
+
+									<div class="modal-body">
+										<!-- <h6 class="font-weight-semibold">Text in a modal</h6> -->
+										<p>Details are pushed and updated on the record.</p>
+
+										<!-- <hr> -->
+
+										<!-- <h6 class="font-weight-semibold" style="text-align: center;">Your transaction details will be emailed and also sent to your mobile number.</h6> -->
+										<!-- <p style="font-size: 80px;text-align: center;">50314861</p> -->
+										<!-- <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p> -->
+									</div>
+
+									<div class="modal-footer">
+										<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+										<!-- <button type="button" class="btn bg-success">Save changes</button> -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /success modal -->
+					</div>
+				</div>
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<!-- <span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span> -->
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Support</a></li>
+						<!-- <li class="nav-item"><a href="http://demo.interface.club/limitless/docs/" class="navbar-nav-link" target="_blank"><i class="icon-file-text2 mr-2"></i> Docs</a></li> -->
+						<!-- <li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li> -->
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+	
+</body>
+<script>
+		var myfilename;
+		var mydocname;
+		var filesToUpload=[];
+		var filesToUpload1=[];
+		var dpdwn;
+	
+	function upload() {
+		const formData = new FormData();
+		 files=[];
+		files = filesToUpload;
+		console.log(files);
+	
+		for(let i =0; i < files.length; i++){
+			formData.append("uploads[]", files[i], files[i]['name']);
+		}
+		console.log('form data variable :   '+ formData.toString());
+		// this.http.post('http://localhost:3003/upload', formData)
+		//     .map(files => files.json())
+		//     .subscribe(files => console.log('files', files))
+	
+			let url = "http://localhost:3000/upload";
+		  $.ajax({
+			type: "POST",
+			url:url,
+			data:formData,
+			processData: false,
+			contentType: false,
+			success:function(res,err){
+			  if(res){
+				img=res;
+				console.log(res,"myres2");
+			  }
+			  if(err){
+				console.log(err,"myerr2");
+			  }
+			}
+		  })
+	
+	
+		  const formData1 = new FormData();
+		 files1=[];
+		files1 = filesToUpload1;
+		console.log(files1);
+	
+		for(let i =0; i < files1.length; i++){
+			formData1.append("uploads[]", files1[i], files1[i]['name']);
+		}
+		console.log('form data variable :   '+ formData1.toString());
+		// this.http.post('http://localhost:3003/upload', formData)
+		//     .map(files => files.json())
+		//     .subscribe(files => console.log('files', files))
+	
+			let url1 = "http://localhost:3000/upload1";
+		  $.ajax({
+			type: "POST",
+			url:url1,
+			data:formData1,
+			processData: false,
+			contentType: false,
+			success:function(res,err){
+			  if(res){
+				img=res;
+				console.log(res,"myres2");
+			  }
+			  if(err){
+				console.log(err,"myerr2");
+			  }
+			}
+		  })
+	}
+	
+	
+	function fileChangeEvent(fileInput) {
+		filesToUpload = fileInput.target.files;
+		myfilename = fileInput.target.files[0].name;
+		console.log(myfilename)
+		//this.product.photo = fileInput.target.files[0]['name'];
+	}
+	
+	function fileChangeEvent1(fileInput) {
+		filesToUpload1 = fileInput.target.files;
+		mydocname = fileInput.target.files[0].name;
+		//this.product.photo = fileInput.target.files[0]['name'];
+	}
+	
+		const web3 = new Web3(new Web3.providers.HttpProvider('https://ropsten.infura.io/v3/ed9c627571c540d39a95770ce85f7534'));    
+	let myContract = new web3.eth.Contract(contractAbi,contractAddress,{
+		// from: this.owner,
+		gasLimit: 3000000,
+	  });
+	var privatekey = localStorage.getItem("privatekey");  
+	
+	
+	var recordcount;
+		myContract.methods.show_last_record_id().call(function(er,result){
+	console.log(result)	
+		for(var i=1;i<=result;i++){
+			$("#dropdownState").append('<option>'+i+'</option>');		
+		}	
+	})
+							
+	function fun()
+	{		
+
+		var today = new Date();
+	var date = today.getFullYear()+'/'+(today.getMonth()+1)+'/'+today.getDate();
+	
+		dpdwn = parseInt(document.getElementById("url").value);
+		console.log(dpdwn)
+		myContract.methods.show_record_details1(dpdwn).call(function(er,res1){		
+			// console.log(res1)
+			if(res1["_gender"] =="1"){
+				gender = "Male"
+			}
+			if(res1["_gender"] =="2"){
+				gender = "Female"
+			}
+			
+			document.getElementById("sdowenername").value =res1["_owner_name"];
+			document.getElementById("sdmobilenumber").value = res1["_mobile_number"];
+			document.getElementById("sdpincode").value = res1["_pin_code"];
+			document.getElementById("sdstate").value =res1["_state"];
+			document.getElementById("sdgender").value =gender;			
+			document.getElementById("sdrecorddate").value = date;
+			document.getElementById("sdrecordtime").value =new Date().toLocaleTimeString();
+			
+		})
+	}
+	function updaterecord(){
+
+
+		document.getElementById('ld').style.display = "block";
+			// uint256 _unique_record_id,string memory _newOwner,string memory _message
+			var sdgeo = document.getElementById("sdgeo").value
+			var sdarea = document.getElementById("sdarea").value
+			var sdmsg = document.getElementById("sdmsg").value
+			
+	
+			const tx = {
+						to: contractAddress, 
+						gas: 850000,    
+						data: myContract.methods.surveyerUpdateRecord(dpdwn,sdgeo,sdarea,myfilename,sdmsg).encodeABI()
+					}
+	web3.eth.accounts.signTransaction(tx, '0x'+privatekey,function(err,res){
+						console.log(res);
+						console.log(err)
+						web3.eth.sendSignedTransaction( res.rawTransaction).on('transactionHash', txHash => {
+							console.log("txHash", txHash); tx1=txHash }
+						).on('receipt',
+							receipt => { console.log("receipt", receipt) 
+						if(receipt["status"]== "0x1"){  
+							document.getElementById('ld').style.display = "none";  
+							 upload();
+							 $('#modal_theme_success_1').modal('show');
+ 
+							}
+						else{       
+							document.getElementById('ld').style.display = "none";               
+							console.log("unsucess");                  
+						}
+						}
+						).catch(err =>{
+							console.log("error",err);
+							console.log("txhash",tx);
+							web3.eth.getTransactionReceipt(tx,(err,res1)=>{
+								console.log("RECEIPT",res1);
+							})
+						
+						});
+					});
+		}
+	function logout()
+	{
+		window.localStorage.clear();
+		window.localStorage.removeItem('privatekey');
+	window.location.href ="./index.html"
+	}
+	</script>
+	
+</html>
